@@ -31,3 +31,25 @@ In this lab, you will:
 
 ---
 
+## 🔍 Lab Tasks
+
+Use SPL queries to answer the following:
+
+### ✅Task 1: Identify the most frequently queried domain names
+```spl
+index=dns_lab sourcetype="json"
+| stats count by query
+| sort -count
+```
+
+### ✅Task 2: Find the most active user IPs generating DNS traffic
+```spl
+index=dns_lab sourcetype="json"
+| stats count by "id.orig_h"
+| sort -count
+```
+### ✅Task 3: Breakdown of DNS query types (A, AAAA, CNAME, PTR)
+```spl
+index=dns_lab sourcetype="json"
+| stats count by qtype
+```
