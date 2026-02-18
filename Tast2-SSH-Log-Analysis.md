@@ -1,4 +1,4 @@
-# Day#18: Snippet from my second task – SSH Log Analysis
+# 🧪 Lab Title: Snippet from my Tasks – SSH Log Analysis
 
 ---
 
